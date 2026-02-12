@@ -9,31 +9,31 @@ function Projects() {
       description:
         "A privacy-first random video chat application built with WebRTC and Socket.IO. Features real-time peer-to-peer communication, anonymous matchmaking, connection timers and fully responsive UI.",
       tech: ["WebRTC", "Node.js", "Express", "Socket.IO", "JavaScript"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Yatishydv/Blink-video-chat-app",
+      live: "https://blink-video-chat-app.onrender.com/",
     },
     {
       title: "Foodzy — AI-Powered Food Ordering Platform",
       description:
         "A modern full-stack food ordering platform powered by Firebase and Gemini AI. Includes authentication, order tracking, AI chatbot recommendations and 3D visuals using THREE.js.",
       tech: ["React", "Firebase", "Gemini API", "Tailwind", "THREE.js"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Yatishydv/Foodzy",
+      live: "https://foodzy-eat.vercel.app/",
     },
     {
       title: "Yatish Kumar — Interactive Developer Portfolio",
       description:
         "A carefully crafted personal portfolio showcasing real-world projects with refined UI systems, scroll animations, responsive layouts and integrated contact functionality.",
       tech: ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Yatishydv/yatishydvportfolio",
+      live: "https://yatishydvportfolio.vercel.app/",
     },
     {
       title: "FreshMart — MERN Grocery Commerce System",
       description:
         "A comprehensive full-stack grocery e-commerce system featuring JWT authentication, admin dashboard, analytics, Razorpay integration and structured RESTful architecture.",
       tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-      github: "#",
+      github: "https://github.com/Yatishydv/onlinegrosystem",
       live: "#",
     },
     {
@@ -41,7 +41,7 @@ function Projects() {
       description:
         "A responsive web application that integrates Gemini API to dynamically generate and display emerging technology insights with structured content rendering.",
       tech: ["HTML", "CSS", "JavaScript", "Gemini API"],
-      github: "#",
+      github: "https://github.com/Yatishydv/ai-project",
       live: "#",
     },
     {
@@ -49,7 +49,7 @@ function Projects() {
       description:
         "A collaborative platform bridging government initiatives and entrepreneurial innovation through a structured multi-page responsive web experience.",
       tech: ["HTML", "CSS", "JavaScript", "PHP"],
-      github: "#",
+      github: "https://github.com/Yatishydv/ColabX",
       live: "#",
     },
   ];
