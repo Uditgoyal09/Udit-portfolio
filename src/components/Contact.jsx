@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { 
   FaGithub, 
@@ -9,11 +9,7 @@ import {
   FaCheckCircle,
   FaRegSmile,
   FaRegCommentDots,
-  FaRegEnvelope,
-  FaMapMarkerAlt,
-  FaRegClock,
   FaArrowRight,
-  FaRegCopy
 } from "react-icons/fa";
 import { HiOutlineMail, HiOutlineLocationMarker, HiOutlineClock } from "react-icons/hi";
 
@@ -125,7 +121,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-32"
+      className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -170,7 +166,7 @@ function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 lg:mb-20"
+          className="text-center mb-12 sm:mb-16 lg:mb-20"
         >
           <motion.span 
             initial={{ opacity: 0 }}
@@ -181,9 +177,9 @@ function Contact() {
             Get In Touch
           </motion.span>
           
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-5 sm:mb-6 leading-tight">
             Let&apos;s Create Something
-            <span className="relative ml-3">
+            <span className="relative block sm:inline sm:ml-3">
               <span className="relative z-10 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Amazing
               </span>
@@ -196,7 +192,7 @@ function Contact() {
             </span>
           </h2>
           
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg">
             Have a project in mind or just want to chat? I&apos;d love to hear from you. 
             Drop me a message and I&apos;ll get back to you within 24-48 hours.
           </p>
@@ -207,10 +203,10 @@ function Contact() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid lg:grid-cols-2 gap-8 lg:gap-12"
+          className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12"
         >
           {/* Left Column - Contact Info */}
-          <motion.div variants={itemVariants} className="space-y-6">
+          <motion.div variants={itemVariants} className="space-y-5 sm:space-y-6">
             {/* Contact Cards */}
             <div className="grid gap-4">
               {[
@@ -241,22 +237,22 @@ function Contact() {
                 <motion.div
                   key={index}
                   whileHover={{ y: -4 }}
-                  className={`relative group p-5 rounded-2xl bg-gradient-to-br border border-gray-200/50 backdrop-blur-sm overflow-hidden`}
+                  className="relative group p-4 sm:p-5 rounded-2xl bg-gradient-to-br border border-gray-200/50 backdrop-blur-sm overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
                   
-                  <div className="flex items-start gap-4">
+                  <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                     <div className={`${item.iconBg} p-3 rounded-xl text-white shadow-lg`}>
                       <item.icon className="text-xl" />
                     </div>
                     <div className="flex-1">
                       <p className="text-sm font-medium text-gray-500 mb-1">{item.label}</p>
-                      <p className="text-gray-800 font-semibold">{item.value}</p>
+                      <p className="text-gray-800 font-semibold text-sm sm:text-base break-words">{item.value}</p>
                     </div>
                     {item.action && (
                       <button
                         onClick={item.action}
-                        className="px-3 py-1.5 bg-white/80 backdrop-blur rounded-lg text-xs font-medium text-gray-600 hover:bg-white transition-colors"
+                        className="px-3 py-1.5 bg-white/80 backdrop-blur rounded-lg text-xs font-medium text-gray-600 hover:bg-white transition-colors self-start sm:self-auto"
                       >
                         {item.actionLabel}
                       </button>
@@ -276,7 +272,7 @@ function Contact() {
                 Connect With Me
               </h3>
               
-              <div className="flex flex-wrap gap-3">
+              <div className="grid grid-cols-1 sm:flex sm:flex-wrap gap-3">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={index}
@@ -285,7 +281,7 @@ function Contact() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className={`group relative flex items-center gap-3 px-5 py-3 ${social.bgColor} rounded-xl transition-all duration-300 ${social.color} hover:text-white`}
+                    className={`group relative flex items-center justify-between sm:justify-start gap-3 px-4 sm:px-5 py-3 ${social.bgColor} rounded-xl transition-all duration-300 ${social.color} hover:text-white`}
                     aria-label={social.label}
                   >
                     <social.icon className="text-lg" />
@@ -326,10 +322,10 @@ function Contact() {
             <form
               ref={formRef}
               onSubmit={sendEmail}
-              className="bg-white rounded-2xl border border-gray-200/50 shadow-xl p-6 sm:p-8"
+              className="bg-white rounded-2xl border border-gray-200/50 shadow-xl p-4 sm:p-8"
             >
               <div className="mb-6">
-                <h3 className="text-2xl font-semibold flex items-center gap-2">
+                <h3 className="text-xl sm:text-2xl font-semibold flex items-center gap-2">
                   <FaRegCommentDots className="text-gray-400" />
                   Send a Message
                 </h3>
@@ -421,7 +417,7 @@ function Contact() {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isSubmitting}
-                className="mt-6 w-full group relative overflow-hidden rounded-xl bg-gray-900 px-6 py-4 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="mt-6 w-full group relative overflow-hidden rounded-xl bg-gray-900 px-6 py-3 sm:py-4 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   {isSubmitting ? (
