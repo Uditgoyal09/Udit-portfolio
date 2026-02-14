@@ -1,4 +1,4 @@
-# 🚀 Yatish Kumar — Full Stack Developer Portfolio
+# Udit Goyal— Full Stack Developer Portfolio
 
 This is my personal developer portfolio built to showcase my projects, skills, and development journey as a MERN Stack Developer.
 
@@ -8,13 +8,13 @@ Designed with a strong focus on clean UI, smooth animations, and modern web arch
 
 ## 🌐 Live Website
 
-🔗 https://your-vercel-link.vercel.app
+🔗
 
 ---
 
 ## 🧑‍💻 About Me
 
-Hi, I'm **Yatish Kumar**, a passionate Full Stack Developer focused on building scalable web applications with modern frontend experiences and robust backend systems.
+Hi, I'm **Udit Goyal**, a passionate Full Stack Developer focused on building scalable web applications with modern frontend experiences and robust backend systems.
 
 Currently a 3rd-year college student moving toward my final year, actively building real-world MERN stack applications and experimenting with AI integrations, real-time systems, and modern UI engineering.
 
@@ -212,7 +212,7 @@ This portfolio focuses on:
 
 ## 👨‍💻 Author
 
-**Yatish Kumar**  
+**Udit Goyal**  
 Full Stack Developer (MERN)  
 Focused on building scalable, high-performance web applications.
 
