@@ -79,42 +79,6 @@ portfolio/
 
 ---
 
-## 🧩 Featured Projects
-
-### 🍔 Foodzy — AI Powered Food Ordering Platform
-Full-stack React + Firebase application with AI chatbot integration (Gemini API), authentication, order tracking, and animated UI.
-
-Live: https://foodzy-eat.vercel.app
-
----
-
-### 🚀 Blink — Random Video Chat App
-Real-time WebRTC + Socket.IO based anonymous video chat platform with matchmaking system.
-
-Live: https://blink-video-chat-app.onrender.com/app
-
----
-
-### 🛒 FreshMart — MERN E-Commerce Platform
-Complete grocery e-commerce platform with analytics dashboard, JWT authentication, Razorpay integration, and admin panel.
-
----
-
-### 🤝 ColabX — Innovation Collaboration Platform
-Platform connecting government initiatives with entrepreneurial innovation. Built with HTML, CSS, JavaScript.
-
----
-
-### 🔍 Tech Innovations Tracker
-Gemini API powered tech discovery tool with dynamic rendering and responsive UI.
-
----
-
-### 🧪 Portfolio v1
-Previous iteration of my developer portfolio showcasing foundational UI/UX skills.
-
----
-
 ## 📧 Contact System
 
 This portfolio uses **EmailJS** for contact form functionality.
