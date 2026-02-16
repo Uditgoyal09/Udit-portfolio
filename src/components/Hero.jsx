@@ -2,6 +2,8 @@ import bg from "../assets/bg.jpg";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaInstagram, FaChevronDown } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import Lottie from "lottie-react";
+import webDevelopmentAnimation from "../assets/jsonfiles/Web Development.json";
 
 function Hero() {
   const scrollToSection = (id) => {
@@ -45,7 +47,7 @@ function Hero() {
       {/* HERO SECTION */}
       <section
         id="home"
-        className="relative pt-24 md:pt-28 pb-24 md:pb-10 min-h-screen flex flex-col items-center justify-center px-6 md:px-16 bg-cover bg-center bg-no-repeat"
+        className="relative isolate pt-24 md:pt-28 pb-24 md:pb-10 min-h-screen flex flex-col items-center justify-center px-6 md:px-16 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bg})` }}
       >
         <div className="absolute inset-0 bg-[#f3f3f3]/88 backdrop-blur-[1px]"></div>
@@ -97,34 +99,15 @@ function Hero() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="relative mt-10 lg:mt-0 w-full max-w-md mx-auto grid gap-5 md:block md:h-[430px] lg:h-[450px]"
+            className="relative mt-10 lg:mt-0 w-full max-w-xl mx-auto mix-blend-multiply opacity-90"
           >
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-xl w-full text-black md:absolute md:top-0 md:left-6 md:w-48"
-            >
-              <h3 className="font-semibold text-lg">Frontend</h3>
-              <p className="text-sm opacity-80">React - Tailwind - JS</p>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-xl w-full text-black md:absolute md:top-32 md:right-6 md:w-52"
-            >
-              <h3 className="font-semibold text-lg">Backend</h3>
-              <p className="text-sm opacity-80">Node - Express - MongoDB</p>
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, -25, 0] }}
-              transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-              className="bg-white/10 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-xl w-full text-black md:absolute md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:w-56"
-            >
-              <h3 className="font-semibold text-lg">Projects</h3>
-              <p className="text-sm opacity-80">Full-Stack Applications</p>
-            </motion.div>
+            <div className="rounded-3xl bg-transparent  p-4 sm:p-6">
+              <Lottie
+                animationData={webDevelopmentAnimation}
+                loop={true}
+                className="w-full h-[260px] sm:h-[320px] md:h-[360px] lg:h-[420px] mix-blend-multiply"
+              />
+            </div>
           </motion.div>
         </div>
 
